@@ -1,0 +1,25 @@
+#!/bin/bash
+#test script
+
+echo text original
+cat f
+
+echo ------------------------------------------------------------------------
+echo text output normal
+cat f | ./pseudogrep lol > f2
+cat f2
+
+echo ------------------------------------------------------------------------
+echo text output numbered
+cat f | ./pseudogrep -n lol > f2
+cat f2
+
+echo ------------------------------------------------------------------------
+echo text output exclude
+cat f | ./pseudogrep -x lol > f2
+cat f2
+
+echo ------------------------------------------------------------------------
+echo text output numbered exclude
+cat f | ./pseudogrep -nx lol > f2
+cat f2

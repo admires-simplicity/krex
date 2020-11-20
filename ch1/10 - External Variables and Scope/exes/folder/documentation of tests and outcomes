@@ -1,0 +1,132 @@
+input:
+Jason Lipshutz of Billboard characterized "Style" as a pop rock song,[9] while the Los Angeles Times's Mikael Wood and The Observer's Kitty Empire described the track's style as "funk-pop".[14][15] Time's Sam Lansky categorized "Style" as 1970s-styled disco,[16] and Rolling Stone's Rob Sheffield noted the song's 1980s synth-pop sound.[17] The refrain's first half is built on D and G major chords that create a relatively radiant atmosphere. The second half incorporates a B minor chord that evokes a glimpse of sorrow.[18] Like the rest of 1989, the track uses heavy synthesizers, vocal reverberation and features an upbeat dance groove, a dramatic change from Swift's trademark country styles.[19][20][21] The refrain is accompanied by "undulating waves" of keyboards underneath.[22] Alexis Petridis of The Guardian compared the song's electronic-oriented styles to those on the soundtrack of the 2011 film Drive and Daft Punk's 2013 album Random Access Memories.[23]
+
+output:
+Jason Lipshutz of Billboard characterized "Style" as a pop rock song,[9] while
+the Los Angeles Times's Mikael Wood and The Observer's Kitty Empire described
+the track's style as "funk-pop".[14][15] Time's Sam Lansky categorized "Style"
+as 1970s-styled disco,[16] and Rolling Stone's Rob Sheffield noted the song's
+1980s synth-pop sound.[17] The refrain's first half is built on D and G major
+chords that create a relatively radiant atmosphere. The second half incorporates
+a B minor chord that evokes a glimpse of sorrow.[18] Like the rest of 1989, the
+track uses heavy synthesizers, vocal reverberation and features an upbeat dance
+groove, a dramatic change from Swift's trademark country styles.[19][20][21] The
+refrain is accompanied by "undulating waves" of keyboards underneath.[22] Alexis
+Petridis of The Guardian compared the song's electronic-oriented styles to those
+on the soundtrack of the 2011 film Drive and Daft Punk's 2013 album Random
+Access Memories.[23]
+END
+named "ffile"
+Test+Demo of Basic use case
+
+
+
+
+
+input:
+abc	def	ghi	jkl	mno	pqr	stu	vwx	yzN	owI	Kno	wMy	ABC	sNe	xtT	ime	Won	'tY	ouS	ing	Wit	hMe	?
+
+output:
+abc     def     ghi     jkl     mno     pqr     stu     vwx     yzN     owI     
+Kno     wMy     ABC     sNe     xtT     ime     Won     'tY     ouS     ing     
+Wit     hMe     ?
+END
+named "ffile2"
+Tab use case
+
+
+
+
+
+input:
+abc	def	ghi	jkl	mno	pqr	stu	vwx	yzN	owIAAA	Kno	wMy	ABC	sNe	xtT	ime	Won	'tY	ouS	ing	Wit	hMe	?
+
+output:
+abc     def     ghi     jkl     mno     pqr     stu     vwx     yzN     owIAAA  
+Kno     wMy     ABC     sNe     xtT     ime     Won     'tY     ouS     ing     
+Wit     hMe     ?
+END
+named "ffile3"
+Tab edge case use case
+
+
+
+
+
+input:
+I built this    line to      test the                ability of my program   to      deal         with       multiple   spaces..................................
+
+output:
+I built this    line to      test the                ability of my program   to
+deal         with       multiple   spaces..................................
+END
+named "ffile4"
+Test of (1): put_spaces() function, (2): edge case where there is not enough room to a word AND the spaces before it on a line, so it must "fold"/"wrap" to the next.
+
+
+
+
+
+"ffile5" was a demonstration of something which I thought might have been a bug, which indeed was, and has since been fixed.
+
+
+
+
+
+input:
+Jason Lipshutz of Billboard characterized "Style" as a pop rock song,[9] whileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee the Los Angeles Times's Mikael Wood and The Observer's Kitty Empire described the track's style as "funk-pop".[14][15] Time's Sam Lansky categorized "Style" as 1970s-styled disco,[16] and Rolling Stone's Rob Sheffield noted the song's 1980s synth-pop sound.[17] The refrain's first half is built on D and G major chords that create a relatively radiant atmosphere. The second half incorporates a B minor chord that evokes a glimpse of sorrow.[18] Like the rest of 1989, the track uses heavy synthesizers, vocal reverberation and features an upbeat dance groove, a dramatic change from Swift's trademark country styles.[19][20][21] The refrain is accompanied by "undulating waves" of keyboards underneath.[22] Alexis Petridis of The Guardian compared the song's electronic-oriented styles to those on the soundtrack of the 2011 film Drive and Daft Punk's 2013 album Random Access Memories.[23]
+
+output:
+Jason Lipshutz of Billboard characterized "Style" as a pop rock song,[9] whileee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeee the Los Angeles Times's Mikael Wood and The Observer's Kitty Empire
+described the track's style as "funk-pop".[14][15] Time's Sam Lansky categorized
+"Style" as 1970s-styled disco,[16] and Rolling Stone's Rob Sheffield noted the
+song's 1980s synth-pop sound.[17] The refrain's first half is built on D and G
+major chords that create a relatively radiant atmosphere. The second half
+incorporates a B minor chord that evokes a glimpse of sorrow.[18] Like the rest
+of 1989, the track uses heavy synthesizers, vocal reverberation and features an
+upbeat dance groove, a dramatic change from Swift's trademark country
+styles.[19][20][21] The refrain is accompanied by "undulating waves" of
+keyboards underneath.[22] Alexis Petridis of The Guardian compared the song's
+electronic-oriented styles to those on the soundtrack of the 2011 film Drive and
+Daft Punk's 2013 album Random Access Memories.[23]
+END
+named "ffile6"
+test + demo of handle_long_word() case
+
+
+
+
+
+input:
+Jason Lipshutz of Billboard characterized "Style" as a pop rock song,[9]     whileeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee the Los Angeles Times's Mikael Wood and The Observer's Kitty Empire described the track's style as "funk-pop".[14][15] Time's Sam Lansky categorized "Style" as 1970s-styled disco,[16] and Rolling Stone's Rob Sheffield noted the song's 1980s synth-pop sound.[17] The refrain's first half is built on D and G major chords that create a relatively radiant atmosphere. The second half incorporates a B minor chord that evokes a glimpse of sorrow.[18] Like the rest of 1989, the track uses heavy synthesizers, vocal reverberation and features an upbeat dance groove, a dramatic change from Swift's trademark country styles.[19][20][21] The refrain is accompanied by "undulating waves" of keyboards underneath.[22] Alexis Petridis of The Guardian compared the song's electronic-oriented styles to those on the soundtrack of the 2011 film Drive and Daft Punk's 2013 album Random Access Memories.[23]
+
+output:
+Jason Lipshutz of Billboard characterized "Style" as a pop rock song,[9]     whi
+leeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeee the Los Angeles Times's Mikael Wood and The Observer's Kitty
+Empire described the track's style as "funk-pop".[14][15] Time's Sam Lansky
+categorized "Style" as 1970s-styled disco,[16] and Rolling Stone's Rob Sheffield
+noted the song's 1980s synth-pop sound.[17] The refrain's first half is built on
+D and G major chords that create a relatively radiant atmosphere. The second
+half incorporates a B minor chord that evokes a glimpse of sorrow.[18] Like the
+rest of 1989, the track uses heavy synthesizers, vocal reverberation and
+features an upbeat dance groove, a dramatic change from Swift's trademark
+country styles.[19][20][21] The refrain is accompanied by "undulating waves" of
+keyboards underneath.[22] Alexis Petridis of The Guardian compared the song's
+electronic-oriented styles to those on the soundtrack of the 2011 film Drive and
+Daft Punk's 2013 album Random Access Memories.[23]
+END
+named "ffile7"
+demo of long word wrap with spaces before long word
+
+
+
+
+
+This program should therefor handle everything I expect it to be used for.
